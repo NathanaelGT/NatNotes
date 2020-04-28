@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^api/create/?$ api.php?f=CREATE [NC,L]
+
+RewriteRule ^api/update/?$ api.php?f=UPDATE [NC,L]
+
+RewriteRule ^api/delete/?$ api.php?f=DELETE [NC,L]
+
+RewriteRule ^api?$ api.php [NC,L]
+RewriteRule ^api/([0-9]+)/?$ api.php?id=$1 [NC,L]
